@@ -10,7 +10,7 @@ homepage = "https://github.com/py0x/aws-sqs-create-queue"
 description = """
 Create multiple AWS SQS queues and its corresponding dead-letter-queues with minimal configuration.
 """
-keywords = ["aws", "sqs", "dead letter queue"]
+keywords = ["aws", "sqs", "dead-letter-queue"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -18,7 +18,37 @@ OPTIONS:
 ```
 
 ## Configuration file
-Please refer to `examples/sqs-conf.toml`
+`examples/sqs-conf.toml`
+```toml
+# --- demo-queue
+[[queues]]
+[queues.queue]
+name = "demo-queue"
+visibility_timeout=3500
+message_retention_period=3600
+message_max_receive_count=3
+
+[queues.dead_letter_queue]
+name = "demo-queue-dlq"
+visibility_timeout=80
+message_retention_period=60
+
+
+# --- demo-queue-2
+[[queues]]
+[queues.queue]
+name = "demo-queue-2"
+visibility_timeout=1234
+message_retention_period=111
+message_max_receive_count=12
+
+[queues.dead_letter_queue]
+name = "demo-queue-2-dlq"
+visibility_timeout=180
+message_retention_period=601
+
+# --- more
+```
 
 ## Usage
 ```
